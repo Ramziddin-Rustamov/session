@@ -1,7 +1,5 @@
 <?php
 include 'includes/db.php';
-
-// Fetch subjects from the database
 $stmt = $pdo->prepare("SELECT * FROM subjects");
 $stmt->execute();
 $subjects = $stmt->fetchAll(PDO::FETCH_ASSOC);
